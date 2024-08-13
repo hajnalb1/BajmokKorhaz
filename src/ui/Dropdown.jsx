@@ -5,6 +5,7 @@ export default function Dropdown({
   options,
   ezTörténikHaKattintaszValamire,
   dropDownBodyStyle,
+  dropDownTextSize,
 }) {
   const [showOptions, setShowOptions] = useState(false);
 
@@ -12,22 +13,20 @@ export default function Dropdown({
 
   return (
     <>
-      <div onClick={show}>
-        <p
+      <span onClick={show}>
+        <span
           style={{
             cursor: "pointer",
           }}
         >
           {name}
-        </p>
-      </div>
+        </span>
+      </span>
       {showOptions && (
         <div className={dropDownBodyStyle}>
           {options.map((option, index) => (
             <span
-              style={{
-                cursor: "pointer",
-              }}
+              className={dropDownTextSize}
               key={index}
               onClick={() => {
                 ezTörténikHaKattintaszValamire(option.value);

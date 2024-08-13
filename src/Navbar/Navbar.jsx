@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Button from "../ui/Button";
 import Dropdown from "../ui/Dropdown";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   const [language, setLanguage] = useState("HU-hu"); // Kezdeti nyelv
   const [translations, setTranslations] = useState({}); // Fordítások tárolása
@@ -53,7 +54,7 @@ const Navbar = () => {
       </div>
 
       <Dropdown
-        name={"Nyelv"}
+        name={<FontAwesomeIcon icon={faGlobe} fontSize={26} />}
         options={[
           { label: "Magyar", value: "HU-hu" },
           { label: "Szerb", value: "SR-sr" },
@@ -61,6 +62,7 @@ const Navbar = () => {
         ]}
         ezTörténikHaKattintaszValamire={nyelvValtas}
         dropDownBodyStyle={"languageDropDownBodyStyle"}
+        dropDownTextSize={"languagedropDownTextSize"}
       />
     </div>
   );

@@ -744,7 +744,7 @@ code {
 
 .languageDropDownBodyStyle {
   background-color: white;
-  border: 1px solid rgb(138, 128, 128);
+
   border-radius: 8px;
   color: black;
   font-family: fantasy;
@@ -755,4 +755,13 @@ code {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.languagedropDownTextSize {
+  cursor: pointer;
+}
+
+.languagedropDownTextSize:hover {
+  background-color: rgba(202, 197, 197, 0.3);
+  border-radius: 5%;
 }
