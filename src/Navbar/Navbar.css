@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: #02735e;
+  color: white;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 24px;
+  width: 85%;
+  font-size: larger;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center; /* Biztosítja, hogy a linkek is középen legyenek */
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: block;
+    text-align: center;
+  }
+}
+
+.auth-buttons {
+  background-color: #ffffff; /* Fehér gomb */
+  color: #00796b; /* Teal szöveg */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Középre igazítás függőlegesen */
+  text-align: center;
+  padding: 8px 8px; /* Belső margók egyenletesen */
+  border: none; /* Keret eltávolítása */
+  border-radius: 30px; /* Lekerekített sarkok */
+  font-weight: 200;
+  font-size: 12px; /* Betűméret */
+  cursor: pointer; /* Kéz ikon az egérmutatóhoz */
+}
+
+.logo {
+  padding: 15px;
+  font-weight: 600;
+}

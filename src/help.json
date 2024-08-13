@@ -1,0 +1,8 @@
+{
+  "doktor": {
+    "nev": "string",
+    "kora": "date",
+    "szakterulet": "string",
+    "paciensei": []
+  }
+}

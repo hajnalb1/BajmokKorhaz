@@ -1,0 +1,32 @@
+.footer {
+  background-color: #333; /* Sötét háttérszín a footernek */
+  color: white; /* Fehér szövegszín */
+  display: flex; /* Flexbox layout a footer elemekhez */
+  align-items: center; /* Középre igazítja a flex elemeket függőlegesen */
+  justify-content: flex-start; /* Flex elemek balra igazítása */
+  padding: 2%;
+}
+
+.footer a {
+  text-decoration: none; /* Eltávolítja az aláhúzást a linkekről */
+}
+
+.footer a img {
+  width: auto; /* Kép szélessége */
+  height: 50px; /* Automatikus magasság, hogy megtartsa az arányokat */
+}
+
+.footer img {
+  width: auto; /* Bal oldali kép szélessége */
+  height: 50px; /* Automatikus magasság, hogy megtartsa az arányokat */
+  border-radius: 8px;
+}
+
+.footer div {
+  text-align: center; /* Középre igazítja a szöveget */
+  flex: 1; /* Flex grow, hogy a div a maradék helyet kitöltse */
+}
+
+.footer p {
+  margin: 5px 0; /* Margó a bekezdések között */
+}
